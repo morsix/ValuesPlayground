@@ -1,0 +1,14 @@
+C:\personalrepo\TestApplication\TestApplication.API\bin\Debug\netcoreapp2.2\TestApplication.API.deps.json
+C:\personalrepo\TestApplication\TestApplication.API\bin\Debug\netcoreapp2.2\TestApplication.API.runtimeconfig.json
+C:\personalrepo\TestApplication\TestApplication.API\bin\Debug\netcoreapp2.2\TestApplication.API.runtimeconfig.dev.json
+C:\personalrepo\TestApplication\TestApplication.API\bin\Debug\netcoreapp2.2\TestApplication.API.dll
+C:\personalrepo\TestApplication\TestApplication.API\bin\Debug\netcoreapp2.2\TestApplication.API.pdb
+C:\personalrepo\TestApplication\TestApplication.API\obj\Debug\netcoreapp2.2\TestApplication.API.csproj.CoreCompileInputs.cache
+C:\personalrepo\TestApplication\TestApplication.API\obj\Debug\netcoreapp2.2\TestApplication.API.RazorAssemblyInfo.cache
+C:\personalrepo\TestApplication\TestApplication.API\obj\Debug\netcoreapp2.2\TestApplication.API.RazorAssemblyInfo.cs
+C:\personalrepo\TestApplication\TestApplication.API\obj\Debug\netcoreapp2.2\TestApplication.API.AssemblyInfoInputs.cache
+C:\personalrepo\TestApplication\TestApplication.API\obj\Debug\netcoreapp2.2\TestApplication.API.AssemblyInfo.cs
+C:\personalrepo\TestApplication\TestApplication.API\obj\Debug\netcoreapp2.2\TestApplication.API.RazorTargetAssemblyInfo.cache
+C:\personalrepo\TestApplication\TestApplication.API\obj\Debug\netcoreapp2.2\TestApplication.API.dll
+C:\personalrepo\TestApplication\TestApplication.API\obj\Debug\netcoreapp2.2\TestApplication.API.pdb
+C:\personalrepo\TestApplication\TestApplication.API\obj\Debug\netcoreapp2.2\TestApplication.API.csprojAssemblyReference.cache
