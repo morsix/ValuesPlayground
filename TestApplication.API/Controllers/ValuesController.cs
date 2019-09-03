@@ -10,9 +10,31 @@ namespace TestApplication.API.Controllers
     {
         // GET api/values
         [HttpGet]
-        public ActionResult<IEnumerable<string>> Get()
+        public ActionResult<IEnumerable<Vehicle>> Get()
         {
-            return new string[] { "value1", "value2", "value3", "value4" };
+            var items = new List<Vehicle>
+            {
+                new Vehicle
+                {
+                    Id = 1,
+                    Make = "Honda",
+                    Model = "Civic",
+                    Year = 2019,
+                    Price = 15000,
+                    ImageLink = "https://m.atcdn.co.uk/a/media/w1024/b9acf31a012f4a6791f8d6065e850b20.jpg"
+                },
+                new Vehicle
+                {
+                    Id = 2,
+                    Make = "Vauxhall",
+                    Model = "Insignia",
+                    Year = 2019,
+                    Price = 18000,
+                    ImageLink = "https://m.atcdn.co.uk/a/media/w800h600/9099631356e2442a9f827a5939767a11.jpg"
+                },
+
+            };
+            return items;
         }
 
         // GET api/values/5
@@ -39,5 +61,14 @@ namespace TestApplication.API.Controllers
         public void Delete(int id)
         {
         }
+    }
+
+    public class Vehicle {
+        public long Id { get; set; }
+        public string Make { get; set; }
+        public string Model { get; set; }
+        public double Price { get; set; }
+        public string ImageLink { get; set; }
+        public int Year { get; set; }
     }
 }
