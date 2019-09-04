@@ -21,7 +21,7 @@ const Home = props => {
     };
 
     const showValues = values.map((v) => {
-        return <div key={v.id} class="col-auto mb-3">
+        return <div key={v.id} className="col-auto mb-3">
             <div className="card tb-card">
                 <img className="card-img-top tb-card-img" src={v.imageLink} alt="Card cap"></img>
                 <div className="card-body">
@@ -33,8 +33,8 @@ const Home = props => {
         </div>
     })
 
-    return <div class="container-fluid mt-4">
-        <div class="row justify-content-center">
+    return <div className="container-fluid mt-4">
+        <div className="row justify-content-center">
             {showValues}
         </div>
     </div>

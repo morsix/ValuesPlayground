@@ -6,3 +6,7 @@
 .tb-card{
     width: 280px;
 }
+
+body {
+   background-image: none;
+}
