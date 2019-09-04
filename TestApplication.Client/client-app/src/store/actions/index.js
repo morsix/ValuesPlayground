@@ -1,0 +1,3 @@
+export {
+ initVehicles
+} from './vehicle';

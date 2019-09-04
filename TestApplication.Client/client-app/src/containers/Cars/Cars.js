@@ -1,26 +1,27 @@
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import React,{ useEffect } from 'react';
+import { connect } from 'react-redux';
+import * as actions from '../../store/actions/index';
 import "./Cars.css";
 
 
-const Home = props => {
+const Cars = props => {
 
-    const [values, setValues] = useState([]);
+    // const [values, setValues] = useState([]);
 
     useEffect(() => {
-        loadValues();
+        props.onInitVehicles();
     }, [])
 
 
-    const loadValues = () => {
-        console.log("getting values");
-        axios.get('/api/values').then(r => {
-            console.log(r.data);
-            setValues(r.data);
-        });
-    };
+    // const loadValues = () => {
+    //     console.log("getting values");
+    //     axios.get('/api/values').then(r => {
+    //         console.log(r.data);
+    //         setValues(r.data);
+    //     });
+    // };
 
-    const showValues = values.map((v) => {
+    const showValues = props.cars.map((v) => {
         return <div key={v.id} className="col-auto mb-3">
             <div className="card tb-card">
                 <img className="card-img-top tb-card-img" src={v.imageLink} alt="Card cap"></img>
@@ -41,4 +42,16 @@ const Home = props => {
 
 }
 
-export default Home;
+const mapStateToProps = state => {
+    return {
+        cars: state.vehicle.vehicles
+    };
+}
+
+const mapDispatchToProps = dispatch =>{
+    return {
+        onInitVehicles: () => dispatch(actions.initVehicles()),
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Cars);
