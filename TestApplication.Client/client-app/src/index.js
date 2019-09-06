@@ -11,6 +11,8 @@ import './index.css';
 import App from './App';
 import vehicleReducer from './store/reducers/vehicle';
 
+const appSettings = require('./clientappsettings');
+
 const rootReducer = combineReducers({
     vehicle: vehicleReducer,
 })
@@ -18,7 +20,7 @@ const rootReducer = combineReducers({
 const composeEnhancers = process.env.NODE_ENV === 'development' ? window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ : null || compose;
 const store = createStore(rootReducer, composeEnhancers(applyMiddleware(thunk)));
 
-axios.defaults.baseURL = 'https://localhost:44384';
+axios.defaults.baseURL = appSettings.API_URL;
 
 const app = (
     <Provider store={store}>

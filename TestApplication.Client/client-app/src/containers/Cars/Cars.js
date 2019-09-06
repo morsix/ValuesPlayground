@@ -1,5 +1,6 @@
 import React,{ useEffect } from 'react';
 import { connect } from 'react-redux';
+import { Link } from "react-router-dom";
 import * as actions from '../../store/actions/index';
 import "./Cars.css";
 
@@ -10,7 +11,7 @@ const Cars = props => {
 
     useEffect(() => {
         props.onInitVehicles();
-    }, [])
+    },[])
 
 
     // const loadValues = () => {
@@ -28,7 +29,7 @@ const Cars = props => {
                 <div className="card-body">
                     <h5 className="card-title">{v.make + " " + v.model}</h5>
                     <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <button type="button" className="btn btn-primary">Go to details</button>
+                    <Link to={props.match.url + '/'  + v.id}><button type="button" className="btn btn-primary tb-button">Details</button></Link>
                 </div>
             </div>
         </div>

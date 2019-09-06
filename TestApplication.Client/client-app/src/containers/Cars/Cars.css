@@ -10,3 +10,14 @@
 body {
    background-image: none;
 }
+
+.tb-button{
+    background-color: #FFB34F;
+    color: black;
+    border-color: black;
+}
+
+.tb-button:hover{
+    background-color: #FFB000;
+    color: black;
+}
