@@ -37,6 +37,7 @@ const Cars = props => {
 
     return <div className="container-fluid mt-4">
         <div className="row justify-content-center">
+            <p>I like cheese</p>
             {showValues}
         </div>
     </div>
